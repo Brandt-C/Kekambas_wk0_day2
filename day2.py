@@ -207,16 +207,58 @@ def timesfive(num):
 
 
 
-def ageism(num):
-    if num >= 65:
-        print("you're an Senior")
-    elif num < 18:
-        print("you're a kid!")
-    else:
-        print("you're a Adult")
+# def ageism(num):
+#     if num >= 65:
+#         print("you're an Senior")
+#     elif num < 18:
+#         print("you're a kid!")
+#     else:
+#         print("you're a Adult")
 
-y = int(input('gimme an age'))
-ageism(y)
+# y = int(input('gimme an age'))
+# ageism(y)
+
+
+#PART 2 !!!!  Diving a little further into lists and dictionaries
+
+
+# a dicitonary is a collection of key-value pairs
+# syntax -->  {key : value, key2 : value}
+#compare to list-->  [item, item, item]
+# datatypes--> just about anything BUT keys must be unique!!!
+
+
+# dictionaries are SEMI-ordered
+
+ex_list = ['first item', 'second item', 'third item']
+
+ex_dict = {'key1':True, 'key2': 2, 3: 'third value'}
+emp_dict = {}
+
+print(ex_list[0])
+print(ex_dict['key2'])
+
+# adding a keyt/value pair
+ex_dict['key4'] = 'number 4'
+print(ex_dict)
+ex_dict['key4'] = 4
+print(ex_dict)
+del ex_dict['key4']
+print(ex_dict)
+
+# a little bit more about lists
+
+confusing = [1, 2, 3, [1, 2, 3, {'nested': 'value'}], ['string', 'another_string!'], 'last item']
+
+print(type(confusing))
+print(confusing[3])
+print(confusing[3][3])
+print(confusing[3][3]['nested'])
+
+
+
+
+
 
 
 
